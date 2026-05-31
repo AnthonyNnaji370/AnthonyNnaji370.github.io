@@ -315,6 +315,131 @@ footer span{font-size:0.76rem;color:var(--gray-3);}
 #contact > .container > p { color: rgba(255,255,255,0.5) !important; }
 #contact .c-link { color: rgba(255,255,255,0.7); border-color: rgba(255,255,255,0.15); }
 #contact .c-link:hover { color: #fff; border-color: rgba(255,255,255,0.5); }
+
+/* =============================================
+   MOBILE RESPONSIVE — max-width: 768px
+   ============================================= */
+@media (max-width: 768px) {
+
+  /* NAV */
+  nav {
+    padding: 0.9rem 1.25rem;
+  }
+  .nav-logo { font-size: 0.9rem; }
+  .nav-right { gap: 1rem; }
+  .nav-right a { font-size: 0.78rem; }
+  .nav-right .nav-resume { padding: 0.28rem 0.65rem; }
+
+  /* CONTAINER */
+  .container { padding: 0 1.25rem; }
+
+  /* HERO */
+  #hero { min-height: 100svh; padding: 5rem 0 3rem; }
+  .hero-inner {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    padding: 0 1.25rem;
+    text-align: center;
+  }
+  .profile-wrap { justify-content: center; }
+  .profile-square {
+    width: 220px !important;
+    height: 250px !important;
+    margin: 0 auto;
+  }
+  .hero-name { font-size: clamp(2rem, 8vw, 2.8rem) !important; }
+  .hero-degrees { font-size: 0.75rem; }
+  .hero-tagline { font-size: 0.68rem; letter-spacing: 0.1em; }
+  .hero-bio { font-size: 0.92rem; text-align: left; }
+  .hero-ctas { justify-content: center; }
+  .btn-white, .btn-outline { font-size: 0.72rem; padding: 0.75rem 1.25rem; }
+
+  /* SECTION SPACING */
+  .section-block { padding: 3.5rem 0; }
+  .section-block h2 { font-size: 1.6rem; }
+
+  /* PROJECTS */
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem;
+  }
+
+  /* SKILLS */
+  .skills-row {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .sk-box { padding: 1.25rem 1rem; }
+  .sk-cat { font-size: 0.62rem; white-space: normal; }
+  .sk-tag { font-size: 0.72rem; }
+
+  /* EDUCATION */
+  .edu-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .edu-body {
+    grid-template-columns: 1fr auto !important;
+    align-items: flex-start;
+  }
+  .edu-logo { width: 42px !important; height: 42px !important; flex-shrink: 0; }
+  .edu-deg { font-size: 0.88rem; }
+
+  /* COURSEWORK */
+  .coursework-block { font-size: 0.85rem; }
+
+  /* CERTIFICATIONS */
+  .cert-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .cert-card { padding: 1rem 1rem; }
+  .cert-name { font-size: 0.82rem; }
+  .cert-issuer { font-size: 0.72rem; }
+
+  /* CONTACT */
+  #contact .container { text-align: center; }
+  .contact-links { flex-direction: column; align-items: center; gap: 0.6rem; }
+  .c-link { justify-content: center; font-size: 0.82rem; }
+
+  /* FOOTER */
+  .footer-inner {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    font-size: 0.75rem;
+  }
+
+  /* RESUME MODAL */
+  #resume-modal > div {
+    width: 98vw !important;
+    height: 95vh !important;
+  }
+}
+
+/* =============================================
+   SMALL MOBILE — max-width: 480px
+   ============================================= */
+@media (max-width: 480px) {
+  .hero-name { font-size: clamp(1.75rem, 7vw, 2.2rem) !important; }
+  .profile-square {
+    width: 180px !important;
+    height: 210px !important;
+  }
+  .skills-row {
+    grid-template-columns: 1fr !important;
+  }
+  .btn-white, .btn-outline {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .hero-ctas { flex-direction: column; align-items: center; }
+  .p-body { padding: 1rem; }
+  .p-title { font-size: 0.9rem; }
+  .p-desc { font-size: 0.82rem; }
+  .section-block h2 { font-size: 1.35rem; }
+  .container { padding: 0 1rem; }
+  nav { padding: 0.85rem 1rem; }
+}
+
 </style>
 </head>
 <body>
